@@ -1,0 +1,57 @@
+{
+  "name": "graphiti",
+  "description": "A neo4j ORM and graph modeler",
+  "version": "1.0.0",
+  "main": "lib/graphiti.js",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:integration -- --single-run --browsers PhantomJS",
+    "watch": "npm run test:unit -- --watch --reporter dot",
+    "pretest": "eslint lib/**/*.js --config .eslint.json",
+    "travis": "node scripts/matches v4 && npm run test:coverage || npm run test",
+    "cover:unit": "istanbul cover --root ./lib --dir coverage/unit -x=scripts/** _mocha -- test/unit/**/*.js",
+    "codeclimate": "codeclimate-test-reporter < coverage/merged/lcov.info",
+    "test:coverage": "npm run cover:unit && npm run cover:integration && npm run merge && npm run codeclimate",
+    "open:unit": "open coverage/unit/lcov-report/index.html",
+    "test:unit": "mocha test/unit/**/*.js",
+    "test:integration": "karma start",
+    "cover:integration": "NODE_ENV=test karma start ./karma.coverage.conf.js",
+    "merge": "istanbul report --dir coverage/merged --include=coverage/**/coverage.json",
+    "open:integration": "open coverage/integration/html/index.html",
+    "open:merged": "open coverage/merged/lcov-report/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tandrewnichols/graphiti.git"
+  },
+  "keywords": [
+    "neo4j",
+    "neo",
+    "orm ",
+    "graph",
+    "graphdb",
+    "database",
+    "orm",
+    "graffiti"
+  ],
+  "author": {
+    "name": "Andrew Nichols",
+    "email": "tandrewnichols@gmail.com",
+    "url": "www.tandrewnichols.me"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tandrewnichols/graphiti/issues"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "homepage": "https://github.com/tandrewnichols/graphiti",
+  "dependencies": {
+    "async": "^2.1.5",
+    "lodash": "^4.17.4",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "proxyquire": "^1.7.11"
+  }
+}
