@@ -2,6 +2,8 @@
 
 # graphiti
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tandrewnichols/graphiti.svg)](https://greenkeeper.io/)
+
 A neo4j ORM and graph modeler
 
 ## Installation
