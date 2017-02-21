@@ -9,18 +9,13 @@ module.exports = function(config) {
     reporters: ['mocha'],
     browsers: ['Chrome', 'Firefox', 'PhantomJS'],
     preprocessors: {
-      
       'test/unit/**/*.js': ['webpack']
-      
     },
-
 
     // list of files / patterns to load in the browser
     files: [
-      
-      'test/**/*.js'
+      'test/unit/**/*.js'
     ],
-
     
     webpack: {
       module: {
