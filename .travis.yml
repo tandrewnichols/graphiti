@@ -7,6 +7,7 @@ addons:
     packages:
       - oracle-java8-set-default
 install:
+  - "./setup.sh"
   - "npm install npm -g"
   - "npm install"
 script:
