@@ -77,7 +77,7 @@
     "should": "^11.2.0",
     "should-sinon": "0.0.5",
     "sinon": "^1.17.7",
-    "uglify-js": "^2.7.5",
+    "uglify-js": "2.8.9",
     "webpack": "^2.2.1"
   }
 }
