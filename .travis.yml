@@ -11,7 +11,7 @@ install:
   - "npm install npm -g"
   - "npm install"
 script:
-  - "gulp travis"
+  #- "npm run travis"
 node_js:
   - "4"
   - "5"
