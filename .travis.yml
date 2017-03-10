@@ -11,6 +11,7 @@ install:
   - "npm install npm -g"
   - "npm install"
 script:
+  - "echo foo"
   #- "npm run travis"
 node_js:
   - "4"
