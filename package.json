@@ -71,7 +71,7 @@
     "karma-phantomjs-launcher": "^1.0.2",
     "karma-webpack": "^2.0.2",
     "mocha": "^3.2.0",
-    "opn": "^5.0.0",
+    "opn": "^5.1.0",
     "proxyquire": "^1.7.11",
     "rimraf": "^2.6.0",
     "should": "^11.2.0",
