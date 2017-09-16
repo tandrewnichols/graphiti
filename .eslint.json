@@ -31,9 +31,7 @@
     "no-template-curly-in-string": "warn",
     "no-unreachable": "error",
     "valid-typeof": "error",
-    "dot-notation": ["error", {
-      "allowKeywords": false
-    }],
+    "dot-notation": ["error"],
     "eqeqeq": "error",
     "no-extend-native": "error",
     "no-loop-func": "error",
@@ -78,17 +76,12 @@
     "no-lonely-if": "error",
     "no-tabs": "error",
     "no-whitespace-before-property": "error",
-    "object-curly-newline": ["error", {
-      "minProperties": 1
-    }],
     "object-curly-spacing": ["error", "always", {
       "arraysInObjects": false,
       "objectsInObjects": false
     }],
     "object-property-newline": "error",
-    "semi": ["error", "always", {
-      "omitLastInOneLineBlock": true
-    }],
+    "semi": ["error", "never"],
     "space-before-blocks": ["error", "always"],
     "arrow-spacing": ["error", {
       "before": true,
